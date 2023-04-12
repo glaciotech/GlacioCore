@@ -14,17 +14,17 @@ let package = Package(
     targets: [
         .target(name: "GlacioCoreWrapper", dependencies: ["GlacioCore", "MessagePack", "ArgumentParser", "ArgumentParserToolInfo"], path: "Sources/GlacioCoreWrapper", publicHeadersPath: "" ),
         .binaryTarget(name: "GlacioCore",
-                      url: "https://github.com/glaciotech/GlacioCore/releases/download/pre-alpha-v0.1.0/GlacioCore-pre-alpha-v0.1.0.zip",
-                      checksum: "1e0185b261874df9cdeb771800a8fb45c0ba1f172339991c48166896be726560"),
+                      url: "https://github.com/glaciotech/GlacioCore/releases/download/pre-alpha-v0.1.1/GlacioCore-pre-alpha-v0.1.1.zip",
+                      checksum: "316e2d04d5bbb93fd9e618c290d26f3f51fc228a458c0bc2b979f15b13e7b09e"),
         .binaryTarget(name: "MessagePack",
-                      url: "https://github.com/glaciotech/GlacioCore/releases/download/pre-alpha-v0.1.0/MessagePack-pre-alpha-v0.1.0.zip",
-                      checksum: "bcccaa8769402ff2964d9d74e206f2b36290ea37da71a90d0ce5be740290c483"),
+                      url: "https://github.com/glaciotech/GlacioCore/releases/download/pre-alpha-v0.1.1/MessagePack-pre-alpha-v0.1.1.zip",
+                      checksum: "85bc30abe460879ec679a762d691d4eef0331d562a1d2c58f373a3dc2f0c48c9"),
         .binaryTarget(name: "ArgumentParser",
-                      url: "https://github.com/glaciotech/GlacioCore/releases/download/pre-alpha-v0.1.0/ArgumentParser-pre-alpha-v0.1.0.zip",
-                      checksum: "8c367d135c02d9351141e9a2b1a60b14549caf523869549b198a6f77fa58c76c"),
+                      url: "https://github.com/glaciotech/GlacioCore/releases/download/pre-alpha-v0.1.1/ArgumentParser-pre-alpha-v0.1.1.zip",
+                      checksum: "7aa9436715f39019c167704191c7393d815b3c08640658b7e012b391bd4347b0"),
         .binaryTarget(name: "ArgumentParserToolInfo",
-                      url: "https://github.com/glaciotech/GlacioCore/releases/download/pre-alpha-v0.1.0/ArgumentParserToolInfo-pre-alpha-v0.1.0.zip",
-                      checksum: "65e43b2367ef8975c1af19efc6b24e272ae84ed73974c559bb6b2e059c97e2b3"),
+                      url: "https://github.com/glaciotech/GlacioCore/releases/download/pre-alpha-v0.1.1/ArgumentParserToolInfo-pre-alpha-v0.1.1.zip",
+                      checksum: "b5ecd6e68a142d245ca82da86a5decf048f4aab07e8356d12a37452009c72f39"),
     ]
 )
 

@@ -12,7 +12,9 @@ let package = Package(
     dependencies: [
     ],
     targets: [
-        .target(name: "GlacioCoreWrapper", dependencies: ["GlacioCore", "GlacioProxyCouplers", "MessagePack", "ArgumentParser", "ArgumentParserToolInfo"], path: "Sources/GlacioCoreWrapper", publicHeadersPath: "" ),
+        .target(name: "GlacioCoreWrapper",
+                dependencies: ["GlacioCore", "GlacioProxyCouplers", "MessagePack", "ArgumentParser", "ArgumentParserToolInfo", "Logging"],
+                path: "Sources/GlacioCoreWrapper", publicHeadersPath: "" ),
         .binaryTarget(name: "GlacioCore",
                       url: "https://github.com/glaciotech/GlacioCore/releases/download/VERSIONTAG/GlacioCoreFile",
                       checksum: "GlacioCoreSHA"),
@@ -28,5 +30,8 @@ let package = Package(
         .binaryTarget(name: "ArgumentParserToolInfo",
                       url: "https://github.com/glaciotech/GlacioCore/releases/download/VERSIONTAG/ArgumentParserToolInfoFile",
                       checksum: "ArgumentParserToolInfoSHA"),
+        .binaryTarget(name: "Logging",
+                      url: "https://github.com/glaciotech/GlacioCore/releases/download/VERSIONTAG/LoggingFile",
+                      checksum: "LoggingSHA"),
     ]
 )
